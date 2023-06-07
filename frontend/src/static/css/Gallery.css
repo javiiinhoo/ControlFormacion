@@ -1,0 +1,43 @@
+.gallery {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    position: relative;
+    overflow: hidden
+}
+
+.gallery img {
+    height: 250px;
+    
+    width: 450px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out
+}
+
+.gallery img.active {
+    opacity: 1
+}
+
+@media (max-width:768px) {
+
+    .gallery,
+    .gallery img {
+        height: 200px;
+        width: 270px
+    }
+}
+
+@media (max-width:576px) {
+
+    .gallery,
+    .gallery img {
+        height: 150px;
+        width: 230px
+    }
+}

@@ -1,0 +1,50 @@
+.container:first-of-type {
+    max-width: 80% !important
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center
+}
+
+th {
+    background-color: #005ea4;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5
+}
+
+a {
+    color: #005ea4;
+    text-decoration: none;
+    font-weight: 500
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a.visited {
+    color: red;
+    cursor: pointer
+}
+
+a.visited:hover::after {
+    content: "Ya has visitado este enlace";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #999
+}
